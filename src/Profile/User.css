@@ -1,0 +1,116 @@
+.user{
+    padding-top: 15px;
+}
+.form{
+    padding: 1px 0px;
+}
+.form >input{
+    width: 80%;
+    padding: 15px 10px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    color: black;
+    font-size: 16px;
+}
+.form >input::placeholder{
+    color: lightgray;
+    font-size: 14px;
+}
+.usergroup{
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 90vh;
+    align-items: center;
+    top: 56%;
+    left: 50%;
+    position: absolute;
+    padding: 0px 15px;
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+}
+.details{
+    display: flex;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 5px 2px;
+    width: 45%;
+    border-radius: 2px;
+    gap: 15px;
+}
+.subDetails{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.subDetails p{
+    color: gray;
+    margin-bottom: -1rem;
+}
+@media screen and (max-width: 900px) {
+    .usergroup{
+        width: 85%;
+        top: 56%;
+    }
+    .details{
+        margin: 0px 2px;
+        width: 44%;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .usergroup{
+        width: 85%;
+        top: 56%;
+    }
+    .form >input{
+        width: 75%;
+    }
+    .details{
+        margin: 0px 2px;
+        width: 40%;
+        font-size: 12px;
+    }
+    .subDetails{
+        width:100%;
+    }
+    .subDetails h3{
+        width:90%;
+    }
+    .subDetails p{
+        font-size: 9px;
+        color: gray;
+    }
+}
+@media screen and (max-width: 550px) {
+    .details{
+        background-color: green;
+    }
+    .usergroup{
+        width: 85%;
+        top: 56%;
+    }
+    .form >input{
+        width: 80%;
+    }
+    .details{
+        margin: 0px 2px;
+        width: 44%;
+        font-size: 14px;
+    }
+    .usergroup{
+        display: flex;
+        flex-wrap: wrap;
+        width: 85%;
+        gap: 15px;
+    }
+    .details{
+        display: flex;
+        background-color: white;
+        padding: 12px 10px;
+        margin: 0px 2px;
+        width: 100%;
+        border-radius: 2px;
+        gap: 15px;
+    }
+}
